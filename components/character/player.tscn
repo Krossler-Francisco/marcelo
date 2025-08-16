@@ -116,13 +116,13 @@ region = Rect2(224, 0, 56, 56)
 atlas = ExtResource("1_7upq3")
 region = Rect2(280, 0, 56, 56)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6ecoa"]
-atlas = ExtResource("1_7upq3")
-region = Rect2(224, 224, 56, 56)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_q48bb"]
 atlas = ExtResource("1_7upq3")
 region = Rect2(280, 224, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ecoa"]
+atlas = ExtResource("1_7upq3")
+region = Rect2(224, 224, 56, 56)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jkvft"]
 atlas = ExtResource("1_7upq3")
@@ -304,10 +304,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_6ecoa")
+"texture": SubResource("AtlasTexture_q48bb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_q48bb")
+"texture": SubResource("AtlasTexture_6ecoa")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jkvft")
@@ -395,7 +395,7 @@ script = ExtResource("1_hovdd")
 texture_filter = 1
 texture_repeat = 1
 sprite_frames = SubResource("SpriteFrames_mhw68")
-animation = &"attack"
+animation = &"jump_up"
 
 [node name="head_shape" type="CollisionShape2D" parent="player"]
 position = Vector2(-1, 3)
