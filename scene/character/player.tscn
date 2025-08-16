@@ -1,7 +1,10 @@
-[gd_scene load_steps=54 format=3 uid="uid://c0gyosk1cd1gq"]
+[gd_scene load_steps=57 format=3 uid="uid://c0gyosk1cd1gq"]
 
 [ext_resource type="Texture2D" uid="uid://c63c8ptnl2ktm" path="res://assets/character/char_blue.png" id="1_7upq3"]
 [ext_resource type="Script" uid="uid://3m603a0ldfae" path="res://scene/character/player.gd" id="1_hovdd"]
+[ext_resource type="Script" uid="uid://c8kvdtvc4rkus" path="res://scene/character/player_component.gd" id="1_rrjs7"]
+[ext_resource type="Texture2D" uid="uid://ckwc6trsqa0dx" path="res://assets/cursor/cursor_teste.png" id="3_5utgv"]
+[ext_resource type="Script" uid="uid://d1sncamddo1w1" path="res://scene/character/cursor.gd" id="3_w2ep0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hovdd"]
 atlas = ExtResource("1_7upq3")
@@ -384,7 +387,8 @@ height = 12.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f3gsm"]
 size = Vector2(14, 21.5)
 
-[node name="Player" type="Node2D"]
+[node name="player_component" type="Node2D"]
+script = ExtResource("1_rrjs7")
 
 [node name="player" type="CharacterBody2D" parent="."]
 script = ExtResource("1_hovdd")
@@ -412,3 +416,9 @@ scale = Vector2(0.05, 0.05)
 zoom = Vector2(2, 2)
 editor_draw_limits = true
 editor_draw_drag_margin = true
+
+[node name="cursor" type="Node2D" parent="."]
+script = ExtResource("3_w2ep0")
+
+[node name="cursor_texture" type="Sprite2D" parent="cursor"]
+texture = ExtResource("3_5utgv")
