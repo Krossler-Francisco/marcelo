@@ -18,11 +18,9 @@ position = Vector2(302, 386)
 scale = Vector2(3.4, 3.4)
 tile_map_data = PackedByteArray("AAD//wEAAAABAAAAAAAAAAEAAAABAAAAAAABAAEAAAABAAAAAAD+/wEAAAAAAAAAAAACAAEAAAADAAAAAAACAAIAAAADAAEAAAACAAMAAAAFAAAAAAD+/wIAAAAAAAEAAAD+/wMAAAAAAAIAAAD//wIAAAABAAEAAAAAAAIAAAABAAEAAAABAAIAAAABAAEAAAABAAMAAAABAAEAAAAAAAMAAAABAAEAAAD//wMAAAABAAEAAAADAAMAAAAGAAAAAAAEAAMAAAAHAAAAAAAFAAMAAAAIAAAAAAA=")
 
-<<<<<<< HEAD
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_3gdnf")
 volume_db = -6.0
 autoplay = true
-=======
+
 [node name="Interface" parent="." instance=ExtResource("1_3gdnf")]
->>>>>>> 4cf850cfc5a1639c917a87d40cf0531dbb633d33
