@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 200.0
 const JUMP_VELOCITY = -300.0
-
+const BIG_JUMP_VELOCITY = -360.0
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var was_on_floor = true
 var landing_timer = 0.0
@@ -21,6 +21,10 @@ func _physics_process(delta):
 	# Salto
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and not attacking:
 		velocity.y = JUMP_VELOCITY
+		
+	#super pulo apertando seta pra cima
+	if Input.is_action_just_pressed("ui_up") and is_on_floor() and not attacking:
+		velocity.y = BIG_JUMP_VELOCITY
 
 	# Ataque (solo una vez)
 	if Input.is_action_just_pressed("ui_attack") and not attacking:
