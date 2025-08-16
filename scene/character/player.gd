@@ -8,7 +8,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var was_on_floor = true
 var landing_timer = 0.0
 var attacking = false
-var cursor_texture = load("res://assets/cursor/cursor_teste.png")
+var cursor_texture = load("res://assets/cursor/cursor_teste_2.png")
 
 func _ready():
 	$animations.connect("animation_finished", Callable(self, "_on_animation_finished"))
