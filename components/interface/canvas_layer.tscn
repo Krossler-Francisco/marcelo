@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://djhjdpaumc4ho"]
+
+[ext_resource type="Script" uid="uid://dakayaiwybm31" path="res://components/interface/canvas_layer.gd" id="1_vpayl"]
+[ext_resource type="Texture2D" uid="uid://d3r36da4epti2" path="res://assets/ui/bar.png" id="2_tnucn"]
+[ext_resource type="Texture2D" uid="uid://bi8usebayeb8m" path="res://assets/ui/bartop.png" id="3_yos8m"]
+
+[node name="Interface" type="CanvasLayer"]
+scale = Vector2(10, 10)
+transform = Transform2D(10, 0, 0, 10, 0, 0)
+script = ExtResource("1_vpayl")
+
+[node name="HealthBar" type="TextureProgressBar" parent="."]
+texture_filter = 1
+offset_left = 4.4
+offset_top = 41.9
+offset_right = 44.4
+offset_bottom = 81.9
+step = 10.0
+texture_under = ExtResource("2_tnucn")
+texture_progress = ExtResource("3_yos8m")

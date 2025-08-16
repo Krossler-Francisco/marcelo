@@ -35,7 +35,6 @@ func _physics_process(delta):
 	# Ataque
 	if Input.is_action_just_pressed("click_esquerdo") and not attacking:
 		attacking = true
-		velocity.x = 0
 
 		anim.flip_h = get_global_mouse_position().x < global_position.x
 		anim.play("attack")
