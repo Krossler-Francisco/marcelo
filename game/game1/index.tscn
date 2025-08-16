@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=4 uid="uid://14gao0afha68"]
+
+[ext_resource type="PackedScene" uid="uid://ev5jbog05wwf" path="res://components/background/bg_main.tscn" id="1_0jwi5"]
+[ext_resource type="PackedScene" uid="uid://c0gyosk1cd1gq" path="res://components/character/player.tscn" id="2_3gdnf"]
+[ext_resource type="PackedScene" uid="uid://wgsg83r4sn2t" path="res://components/tilemap/global_tiles.tscn" id="3_0jwi5"]
+
+[node name="Index" type="Node"]
+
+[node name="BgMain" parent="." instance=ExtResource("1_0jwi5")]
+
+[node name="player_component" parent="." instance=ExtResource("2_3gdnf")]
+position = Vector2(311, 349)
+
+[node name="GlobalTiles" parent="." instance=ExtResource("3_0jwi5")]
+position = Vector2(302, 386)
+scale = Vector2(3.4, 3.4)
+tile_map_data = PackedByteArray("AAD//wEAAAABAAAAAAAAAAEAAAABAAAAAAABAAEAAAABAAAAAAD+/wEAAAAAAAAAAAACAAEAAAADAAAAAAACAAIAAAADAAEAAAACAAMAAAAFAAAAAAD+/wIAAAAAAAEAAAD+/wMAAAAAAAIAAAD//wIAAAABAAEAAAAAAAIAAAABAAEAAAABAAIAAAABAAEAAAABAAMAAAABAAEAAAAAAAMAAAABAAEAAAD//wMAAAABAAEAAAADAAMAAAAGAAAAAAAEAAMAAAAHAAAAAAAFAAMAAAAIAAAAAAA=")
