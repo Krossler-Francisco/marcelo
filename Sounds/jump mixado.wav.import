@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cdsn4l8sv7ntk"
+path="res://.godot/imported/jump mixado.wav-1eb76fdd4f7ca2e94deffcb4f3cc84ec.sample"
+
+[deps]
+
+source_file="res://Sounds/jump mixado.wav"
+dest_files=["res://.godot/imported/jump mixado.wav-1eb76fdd4f7ca2e94deffcb4f3cc84ec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
