@@ -216,8 +216,8 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5srte")
 }],
-"loop": true,
-"name": &"atack",
+"loop": false,
+"name": &"attack",
 "speed": 12.0
 }, {
 "frames": [{
@@ -393,7 +393,7 @@ script = ExtResource("1_hovdd")
 texture_filter = 1
 texture_repeat = 1
 sprite_frames = SubResource("SpriteFrames_mhw68")
-animation = &"jump_down"
+animation = &"attack"
 
 [node name="head_shape" type="CollisionShape2D" parent="player"]
 position = Vector2(-1, 3)
